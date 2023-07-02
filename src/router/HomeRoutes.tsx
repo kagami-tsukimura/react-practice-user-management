@@ -5,17 +5,17 @@ import { UserManagement } from '../components/pages/UserManagement';
 
 export const homeRoutes = [
   {
-    path: '/react-practice-user-management',
+    path: '/',
     exact: true,
     children: <Home />,
   },
   {
-    path: '/react-practice-user-management/user-management',
+    path: '/user-management',
     exact: false,
     children: <UserManagement />,
   },
   {
-    path: '/react-practice-user-management/setting',
+    path: '/setting',
     exact: false,
     children: <Setting />,
   },
