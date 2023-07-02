@@ -18,15 +18,21 @@ export const Header: FC = memo(() => {
   const { showMessage } = useMessage();
   const history = useHistory();
 
-  const onClickHome = useCallback(() => history.push('/home'), []);
-  const onClickUserManagement = useCallback(
-    () => history.push('/home/user-management'),
+  const onClickHome = useCallback(
+    () => history.push('/react-practice-user-management/home'),
     []
   );
-  const onClickSetting = useCallback(() => history.push('/home/setting'), []);
+  const onClickUserManagement = useCallback(
+    () => history.push('/react-practice-user-management/home/user-management'),
+    []
+  );
+  const onClickSetting = useCallback(
+    () => history.push('/react-practice-user-management/home/setting'),
+    []
+  );
   const onClickTop = useCallback(() => {
     showMessage({ title: 'ログアウトしました', status: 'success' });
-    history.push('/');
+    history.push('/react-practice-user-management');
   }, []);
 
   return (

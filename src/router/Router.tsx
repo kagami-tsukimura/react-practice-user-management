@@ -11,11 +11,11 @@ export const Router: FC = memo(() => {
   return (
     <Switch>
       <LoginUserProvider>
-        <Route exact path='/'>
+        <Route exact path='/react-practice-user-management'>
           <Login />
         </Route>
         <Route
-          path='/home'
+          path='/react-practice-user-management/home'
           render={({ match: { url } }) => (
             <Switch>
               {homeRoutes.map((route) => (
